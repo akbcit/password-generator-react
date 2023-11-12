@@ -1,0 +1,68 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#box{
+  width:30rem;
+  height:30rem;
+  border-radius: 10px;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(249,232,51,1) 0%, rgba(250,196,59,1) 100.2% );
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-rows: 5rem 8rem 1fr;
+}
+
+#header{
+  grid-row-start: 1;
+  grid-row-end:2;
+}
+
+#form-group{
+  grid-row-start: 3;
+  grid-row-end:4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#generate-btn{
+  margin-top:35px;
+}
+
+.form-check{
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+}
+
+#output{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height: 100%;
+  gap:0.5rem;
+}
+
+#generate-btn{
+  width: 7rem;
+  height: 2.3rem;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#password-output{
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#header{
+  padding:25px;
+}
+
